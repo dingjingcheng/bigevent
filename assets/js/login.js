@@ -1,6 +1,5 @@
 $(function () {
     // 点击去注册的链接
-
     $("#link_reg").click(function () {
         $(".login-box").hide();
         $(".reg-box").show();
