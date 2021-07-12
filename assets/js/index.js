@@ -1,5 +1,4 @@
 $(function () {
-
     var layer = layui.layer;
     // 点击退出
     $("#btnLogout").on("click", function () {
@@ -11,8 +10,8 @@ $(function () {
             layer.close(index);
         });
     })
-
     getUserInfo();
+
 })
 
 // 获取用户的基本信息
@@ -57,3 +56,5 @@ function renderAvatar(data) {
         $(".layui-nav-img").hide();
     }
 }
+
+

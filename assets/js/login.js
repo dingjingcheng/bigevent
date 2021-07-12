@@ -50,7 +50,7 @@ $(function () {
     // 发起登录请求
     $("#form_login").on("submit", function (e) {
         e.preventDefault();
-        console.log($(this).serialize());
+        // console.log($(this).serialize());
         $.ajax({
             method: 'POST',
             url: '/api/login',
@@ -58,7 +58,7 @@ $(function () {
             data: $(this).serialize(),
             success: function (res) {
                 if (res.status !== 0) {
-                    return layer.msg(res.message);
+                    return layer.msg("用户名或密码不正确");
                 }
                 layer.msg("登录成功");
                 // 将token存入localStorage中，以便将来获取进入有权限的页面

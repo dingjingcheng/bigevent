@@ -1,3 +1,6 @@
+.layui-layout-admin .layui-logo {
+    background: #23262E url(/assets/images/logo.png) no-repeat center !important;
+}
 .layui-footer {
     text-align: center;
     font-size: 12px;
