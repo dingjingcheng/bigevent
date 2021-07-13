@@ -6,6 +6,7 @@
 $.ajaxPrefilter(function (options) {
     // 发起ajax请求前，统一拼接请求的根路径
     options.url = 'http://api-breakingnews-web.itheima.net' + options.url;
+    // options.url = 'http://www.liulongbin.top:3008' + options.url;
     // 统一为需要权限的url添加请求头信息
     if (options.url.includes("/my/")) {
         options.headers = {//请求头配置，携带token认证身份
